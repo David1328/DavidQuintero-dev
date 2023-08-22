@@ -21,16 +21,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <style>
-    iframe {
-      border: 1px solid black;
-      width: 100%;
-    }
-
-    .output {
-      background: #eee;
-    }
-  </style>
 </head>
 
 <body>
@@ -39,41 +29,40 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Mi Portafolio</a></h1>
+      <h1 class="logo"><a href="index.html" id="titulo">Mi Portafolio</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="#about">Sobre mi</a></li>
-          <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contacto</a></li>
+          <li><a class="nav-link scrollto active" href="#hero" id="inicio">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="#about" id="sobreMi">Acerca de mi</a></li>
+          <li><a class="nav-link scrollto" href="#services" id="servicios">Servicios</a></li>
+          <li><a class="nav-link scrollto" href="#contact" id="contacto">Contacto</a></li>
+          <div class="langs">
+            🌐
+            <button id="Spanish" class="botonesIdiomas">ESP</button>  <b>/</b>
+            <button id="English" class="botonesIdiomas">ENG</button>
+            </div>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/work-4.jpg)">
-    <!--<div id="hero" class="hero route bg-image" style="background-image: url(assets/img/work-6.jpg)">-->
     <div class="overlay-itro"></div>
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">Hola, Soy David Quintero</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="Desarrollar,Back-End"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <h1 class="hero-title mb-4" id="miNombre">Hola, Soy David Quintero</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="System Engineer, Full Stack Developer, Git, API REST"></span></p>
         </div>
       </div>
     </div>
   </div><!-- End Hero Section -->
 
   <main id="main">
-
     <!-- ======= About Section ======= -->
     <section id="about" class="about-mf sect-pt4 route">
       <div class="container">
@@ -90,15 +79,15 @@
                     </div>
                     <div class="col-sm-6 col-md-7">
                       <div class="about-info">
-                        <p><span class="title-s">Nombre: </span> <span>David Javier Quintero Soto</span></p>
-                        <p><span class="title-s">Perfil: </span> <span>BackEnd developer</span></p>
-                        <p><span class="title-s">Correo: </span> <span>quinterosotodavidjavier@gmail.com</span></p>
-                        <p><span class="title-s">Celular: </span> <span>3223695288</span></p>
+                        <p><span class="title-s" id="nombre">Nombre: </span> <span>David Javier Quintero Soto</span></p>
+                        <p><span class="title-s" id="perfil">Perfil: </span> <span>BackEnd developer</span></p>
+                        <p><span class="title-s" id="correo">Correo: </span> <span>quinterosotodavidjavier@gmail.com</span></p>
+                        <p><span class="title-s" id="celular">Celular: </span> <span>3223695288</span></p>
                       </div>
                     </div>
                   </div>
                   <div class="skill-mf">
-                    <p class="title-s">Habilidades</p>
+                    <p class="title-s" id="habilidades">Habilidades</p>
                     <span>HTML</span> <span class="pull-right"></span>
                     <div class="progress">
 
@@ -128,26 +117,31 @@
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0">
                     <div class="title-box-2">
-                      <h5 class="title-left">
+                      <h5 class="title-left" id="sobreMiF">
                         Sobre mi
                       </h5>
                     </div>
                     <p class="lead">
-                      Soy una persona activa, con actitud de liderazgo y
+                      <div id="descripcion" class="lead">
+                        Soy una persona activa, con actitud de liderazgo y
                       dedicada, busco obtener buenos resultados
                       en programación en Java, C++, C# con asp.net y
                       mediante el trabajo en equipo. Con conocimientos
                       bases de datos en mysql con xampp, PostgreSQL y
                       framerwork Entity, backend en php, manejo de
                       creación de servicios rest en JAVA.
+                      </div>
                       <br>
-                      Me gusta jugar voleyball y me gusta los videojuegos
-                      para computadora
+                      <div id="hobbies" class="lead">
+                        Me gusta jugar voleyball y me gusta los videojuegospara computadora
+                      </div>
                       <br>
-                      Y como todo programador un buen cafe ☕
+                      <div id="cafe" class="lead">
+                        Y como todo programador un buen cafe ☕
+                      </div>
                     </p>
                   </div>
-                  <iframe src="assets/CV/HojaDeVida_DavidJavierQuinteroSoto.pdf" style="width:100%; height:500px;"
+                  <iframe id="CV" src="assets/CV/HojaDeVida_DavidJavierQuinteroSoto.pdf" style="width:100%; height:500px;"
                     frameborder="0"></iframe>
                 </div>
               </div>
@@ -163,12 +157,9 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
+              <h3 class="title-a" id="serviciosC">
                 Servicios
               </h3>
-              <p class="subtitle-a">
-                Servicios de Back-End
-              </p>
               <div class="line-mf"></div>
             </div>
           </div>
@@ -181,11 +172,6 @@
               </div>
               <div class="service-content">
                 <h2 class="s-title">ANGULAR</h2>
-                <!--<p class="s-description text-center">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat! Quia,
-                  provident vitae! Magni
-                  tempora perferendis eum non provident.
-                </p>-->
               </div>
             </div>
           </div>
@@ -262,10 +248,10 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="title-box text-center">
-              <h3 class="title-a">
+              <h3 class="title-a" id="certificados">
                 CERTIFICADOS
               </h3>
-              <p class="subtitle-a">
+              <p class="subtitle-a" id="certificadosEs">
                 Certificados de estudio
               </p>
               <div class="line-mf"></div>
@@ -286,7 +272,7 @@
                 <div class="row">
                   <div class="col-sm-8">
                     <div class="w-more">
-                      <h2 class="w-title">Centificado de FrondEnd Developer</h2>
+                      <h2 class="w-title">FrondEnd Developer</h2>
                     </div>
                   </div>
                   <div class="col-sm-4">
@@ -310,7 +296,7 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Centificado de ingles A1</h2>
+                    <h2 class="w-title">English A1</h2>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
@@ -333,7 +319,7 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Centificado de JAVA</h2>
+                    <h2 class="w-title">JAVA</h2>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
@@ -356,7 +342,7 @@
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Centificado de Git y GITHUB</h2>
+                    <h2 class="w-title">Git y GitHub</h2>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
@@ -391,7 +377,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
+                      <h5 class="title-left" id="contactoF">
                         Contacto
                       </h5>
                     </div>
@@ -422,22 +408,6 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <!--<footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer> End  Footer -->
-
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
@@ -452,6 +422,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <!-- Translator -->
+  <script src="assets/js/translator.js"></script>
 
 </body>
 

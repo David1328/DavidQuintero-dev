@@ -1024,3 +1024,19 @@ footer .credits {
 footer .credits a {
   color: #fff;
 }
+.botonesIdiomas{
+  border: none;
+  background-color: transparent;
+  color: white;
+}
+.botonesIdiomas:hover{
+  color: #0078ff;
+}
+iframe {
+  border: 1px solid black;
+  width: 100%;
+}
+
+.output {
+  background: #eee;
+}

@@ -79,7 +79,7 @@ const translations = {
     elements.push(document.getElementById('certificadosEs'));*/
     var CV = document.getElementById("CV");
     if(idioma=="es"){
-        CV.src="assets/CV/HojaDeVida_DavidJavierQuinteroSoto.pdf";
+        CV.src="assets/CV/Hoja De Vida – Ingeniero De Software - DavidJavierQuinteroSoto.pdf";
     }else{
         CV.src="assets/CV/CV_DavidJavierQuinteroSoto.pdf";
     }
